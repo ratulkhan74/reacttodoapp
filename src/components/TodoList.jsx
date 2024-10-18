@@ -1,8 +1,10 @@
 import Todoitem from "./Todoitem";
 function TodoList({ todos, setTodos }) {
+    console.log(todos);
+    
     return (
         <>
-            {todos?.map((item, index) => (
+            {todos.map((item, index) => (
                 <Todoitem
                     key={index}
                     item={item}

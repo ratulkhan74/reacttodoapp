@@ -4,13 +4,7 @@ import TodoList from "./TodoList";
 
 function Todo() {
 
-
     const [todos, setTodos] = useState([]);
-
-
-
-
-
 
     return (
         <div className="w-1/2 m-auto text-center">
