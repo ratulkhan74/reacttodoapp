@@ -1,10 +1,11 @@
 import Todoitem from "./Todoitem";
 function TodoList({ todos, setTodos }) {
-    console.log(todos);
-    
+
+    const sortedTodos = todos.slice().sort((a, b) => Number(a.completed) - Number(b.completed));
+
     return (
         <>
-            {todos.map((item, index) => (
+            {sortedTodos.map((item, index) => (
                 <Todoitem
                     key={index}
                     item={item}
